@@ -1,38 +1,28 @@
  /*
  **  Author: Basile Durand de Gevigney EI2I3 II
  **  Create Time: 2020-09-17 15:49:28
- **  Modified time: 2020-09-17 16:07:57
+ **  Modified time: 2020-09-18 08:28:58
  **  Description: none
  */
-
-
-
  #include <stdio.h>
+ #include <stdlib.h>
+
+int func(int x, int k)
+{
+    if (k <= 1)
+        return x; 
+    if (k % 2)
+        return (func(x, k - 1) * x);
+    return func(x * x, k/2);
+}
 
 int main()
 {
-    unsigned int x;
-    unsigned int result;
-    unsigned int k;
-    unsigned int i;
+    int x;
+    int y;
 
-    i = 1;
-    scanf("%u", &x);
-    scanf("%u", &k);
-    result = x;
-    while (k < 1)
-    {
-        if (k % 2 == 0)
-        {
-            result *= result;
-            k /= 2;
-        }
-       else
-        {
-            result *= x;
-            k -= 1;
-        }
-    }
-    
-    printf("x = %i\n", x);
+    scanf("%d", &x);
+    scanf("%d", &y);
+    printf("result : %i\n", func(x, y));
+    return EXIT_SUCCESS;
 }
