@@ -2,7 +2,7 @@
  **  Author: Basile Durand de Gevigney EI2I3 II
  **  Create Time: 2020-09-17 17:10:17
  **  Modified by: Basile Durand de Gevigney
- **  Modified time: 2020-09-18 11:40:17
+ **  Modified time: 2020-09-18 11:52:04
  **  Description: none
  */
 
@@ -20,7 +20,7 @@ scanf("%d/%d",&a,&b);
 nbr = a/(long double)b;
 d = 1;
 printf("%i/%i =", a, b);
-while (nbr > 0)
+while (nbr > 0 && d < PRECISION - 1)
 {
     //printf(" + %i >= %i ?", ((unsigned int)(nbr * PRECISION)), (unsigned int)((1/(long double)d)* PRECISION));
     if (((unsigned int)(nbr * PRECISION )) >= (unsigned int)((1/(long double)d)* PRECISION))
