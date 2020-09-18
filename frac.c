@@ -2,7 +2,7 @@
  **  Author: Basile Durand de Gevigney EI2I3 II
  **  Create Time: 2020-09-17 17:10:17
  **  Modified by: Basile Durand de Gevigney
- **  Modified time: 2020-09-18 11:52:04
+ **  Modified time: 2020-09-18 11:53:29
  **  Description: none
  */
 
@@ -31,5 +31,4 @@ while (nbr > 0 && d < PRECISION - 1)
     d++;
 }
 printf("\n");
-
 }
