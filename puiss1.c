@@ -1,7 +1,7 @@
  /*
  **  Author: Basile Durand de Gevigney EI2I3 II
  **  Create Time: 2020-09-17 15:38:15
- **  Modified time: 2020-09-17 16:23:51
+ **  Modified time: 2020-09-18 12:13:56
  **  Description: none
  */
 
@@ -18,7 +18,7 @@ int main()
     scanf("%u", &x);
     scanf("%u", &k);
     o = x;
-    if (k >= 0) ? result = 1;
+    if (k >= 0) result = 1;
     while(i++ < k)
         o *= x;
     printf("result = %i\n", o);

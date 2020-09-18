@@ -1,7 +1,7 @@
  /*
  **  Author: Basile Durand de Gevigney EI2I3 II
  **  Create Time: 2020-09-17 15:49:28
- **  Modified time: 2020-09-18 11:39:21
+ **  Modified time: 2020-09-18 12:13:46
  **  Description: none
  */
  #include <stdio.h>
@@ -23,7 +23,7 @@ int main()
 
     scanf("%d", &x);
     scanf("%d", &y);
-    (k == 0) ? return printf("result : 0");
+    if (y == 0) return (printf("result : 0"));
     printf("result : %i\n", func(x, y));
     return EXIT_SUCCESS;
 }
