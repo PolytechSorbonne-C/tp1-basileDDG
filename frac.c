@@ -2,12 +2,12 @@
  **  Author: Basile Durand de Gevigney EI2I3 II
  **  Create Time: 2020-09-17 17:10:17
  **  Modified by: Basile Durand de Gevigney
- **  Modified time: 2020-09-18 11:56:37
+ **  Modified time: 2020-09-18 12:42:17
  **  Description: none
  */
 
 #include <stdio.h>
-#define PRECISION 1000000
+#define PRECISION 10000000
 
 int main()
 {
